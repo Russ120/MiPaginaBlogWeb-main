@@ -1,0 +1,171 @@
+/* Estilo del botón */
+.dark-mode-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.dark-mode-btn:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+/* Estilos cuando el modo oscuro está activado */
+/* dark.css - Versión Dark */
+
+body.dark-mode {
+  background-color: #151718 !important;
+  color: #e0e0e0 !important;
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode header {
+  background-color: #151718 !important;
+  /* border-bottom: 1px solid #333; */
+}
+
+body.dark-mode header h1 a {
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .menu {
+  background-color: transparent !important;
+  border-top: 1px solid #696969 !important;
+  border-bottom: none !important;
+}
+
+body.dark-mode .menu li a {
+  color: #ccc !important;
+  font-weight: 500;
+  padding: 15px 10px;
+  transition: 0.3s ease;
+  font-size: 17px;
+  position: relative;
+}
+
+body.dark-mode .menu li a::after {
+  background-color: #ccc !important;
+}
+
+body.dark-mode .menu li a:hover::after {
+  width: 100%;
+}
+
+body.dark-mode .menu li a:hover {
+  background-color: #444 !important;
+  color: #eee !important;
+}
+
+body.dark-mode .desc {
+  color: #bbb !important;
+}
+
+body.dark-mode .articulos {
+  /* background-color: #1f1f1f !important; */
+  border-bottom: 1px solid #333 !important;
+  color: #ddd !important;
+}
+
+body.dark-mode .articulos h2 {
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .articulos p {
+  color: #bbb !important;
+}
+
+body.dark-mode #articulo1.temas {
+  color: #e0e0e0 !important;
+  background-color: #1b1d1e !important;
+  border-bottom: none !important;
+}
+
+body.dark-mode #articulo1.temas::after {
+  background-color: #e0e0e0 !important;
+}
+
+body.dark-mode .artRecientes li a {
+  color: #ccc !important;
+}
+
+body.dark-mode .artRecientes li a:hover {
+  color: #66aaff !important;
+  text-decoration: underline;
+}
+
+body.dark-mode footer {
+  background-color: #222 !important;
+  color: #ccc !important;
+  line-height: 80px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Secciones internas */
+body.dark-mode .temas, 
+body.dark-mode .recientes h2 {
+  color: #e0e0e0 !important;
+}
+
+body.dark-mode .temas1 {
+  color: #bbb !important;
+}
+
+body.dark-mode img {
+  filter: brightness(0.85) contrast(1);
+  transition: filter 0.3s ease;
+}
+
+
+
+body.dark-mode .contacto{
+  background-color: #1e2122 !important;
+}
+
+body.dark-mode .contacto h2{
+  color: white;
+}
+
+body.dark-mode #parrafos{
+  color: white;
+}
+
+
+body.dark-mode .contrainer .card p {
+  color: #cfcfcf;
+}
+
+body.dark-mode .contrainer .card a {
+  color: #cfcfcf; /* azul verdoso suave */
+}
+
+body.dark-mode .leermas {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+body.dark-mode .leermas:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
