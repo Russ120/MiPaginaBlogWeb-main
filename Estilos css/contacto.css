@@ -1,0 +1,101 @@
+.contacto {
+  max-width: 950px;
+  margin: 60px auto;
+  padding: 50px 30px;
+  background-color: #f4f4f4;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contacto h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.contacto h2::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #111;
+  margin: 12px auto 0;
+  border-radius: 3px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* Estilo para cada círculo */
+.logos i {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  font-size: 35px;
+  color: #fff;
+  background-color: #aaa;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Colores de marca */
+#instagram {
+  background-color: #fc136b;
+}
+#facebook {
+  background-color: #2e53bb;
+}
+#gmail {
+  background-color: #ff5800;
+}
+#whatsapp {
+  background-color: #25d366;
+  /* color: white; */
+}
+
+
+/* Hover atractivo */
+.logos i:hover {
+  background-color: #000;
+  transform: scale(1.1) translateY(-6px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .logos {
+    gap: 25px;
+  }
+
+  .logos i {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    font-size: 28px;
+  }
+
+  .contacto h2 {
+    font-size: 24px;
+  }
+}
+
+#instagram:hover,
+#facebook:hover,
+#whatsapp:hover,
+#gmail:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    transition: all 0.25s;
+    transform: translateY(-5px); 
+}

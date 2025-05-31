@@ -1,0 +1,111 @@
+.contrainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  /* Quitamos altura fija para que crezca según contenido */
+  height: auto;
+  box-sizing: border-box;
+}
+
+.contrainer .card {
+  width: 300px;
+  max-width: 90%; /* que no pase del 90% en pantallas pequeñas */
+  height: auto; /* para que se ajuste al contenido */
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+  box-sizing: border-box;
+  display: fle;
+  align-items: center;
+}
+
+.contrainer .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+  background-color: rgba(22, 167, 34, 0.082);
+}
+
+.contrainer .card img {
+  width: 100%; /* que la imagen ocupe todo el ancho de la card */
+  height: auto; /* para mantener proporción */
+  display: block; /* eliminar espacio abajo */
+}
+
+.contrainer .card h4 {
+  font-weight: 600;
+}
+
+.contrainer .card p {
+  padding: 0 1rem;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contrainer .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.leermas {
+  display: inline-block; /* para que respete padding y dimensAiones */
+  padding: 8px 15px;
+  border-radius: 25px;
+  background-color: rgba(177, 185, 185, 0.7);
+  color: #000;
+  font-weight: 500;  /* peso de la fuente */
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  /* para evitar que el texto salte o el botón cambie de tamaño al hacer hover */
+  box-sizing: border-box;
+}
+
+.leermas:hover {
+  background-color: rgba(177, 185, 185, 0.945);
+  transform: translateY(-3px);
+  color: #000;
+}
+
+
+/* Media queries */
+
+/* Móviles: ancho máximo 600px */
+@media (max-width: 600px) {
+  .contrainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contrainer .card {
+    width: 90%;
+    margin: 15px 0;
+  }
+}
+
+/* Tablets: entre 601px y 900px */
+@media (min-width: 601px) and (max-width: 900px) {
+  .contrainer .card {
+    width: 45%; /* 2 cards por fila */
+    margin: 15px;
+  }
+}
+
+
+.contrainer .card {
+  display: flex;
+  flex-direction: column;
+  padding: 0% 0% 1% 0%;
+}
+
+.contrainer .card a.leermas {
+  margin-top: auto; /* Esto hace que el botón se pegue abajo */
+}
+
+
+/* */

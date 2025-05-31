@@ -1,0 +1,298 @@
+/* Estilos generales */
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #111;
+}
+
+/* Encabezado */
+header {
+  padding: 40px 0;
+  text-align: center;
+  /* border-bottom: 1px solid #e0e0e0; */
+  background-color: #ffffff;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #111;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/* Menú de navegación */
+.menu {
+  list-style: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
+    border-top: 1px solid rgb(0, 0, 0);
+        padding: 1.5%;
+  background-color: transparent;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 15px 10px;
+  transition: 0.3s ease;
+  font-size: 17px;
+  position: relative;
+}
+
+.menu li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background-color: #333;
+  transition: width 0.3s;
+}
+
+.menu li a:hover::after {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* menu */
+  /* .menu{
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+    margin: auto;
+    height: 48px;
+    width: 75%;
+    padding: 1%;
+
+  }
+  .menu li{
+    display: inline-block;
+  }
+  .menu li a{
+    padding: 15px 50px;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+
+  }
+  .menu li a:hover{
+    background-color: rgb(156, 153, 153) ;
+    color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 5px 8px rgb(0,0,0,0.2);
+  }
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Descripción breve */
+.desc {
+  font-size: 20px;
+  text-align: center;
+  margin: 20px auto;
+  width: 80%;
+  color: #222222;
+}
+
+/* Contenedor de artículos */
+.articulos {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ffffff;
+  background-color: transparent;
+}
+
+.articulos:last-of-type {
+  border-bottom: none;
+}
+
+.articulos h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #222;
+  line-height: 1.3;
+}
+
+.articulos img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+.articulos p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #444;
+  text-align: justify;
+}
+
+/* Título principal */
+#articulo1.temas {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  margin: 60px auto 30px;
+  color: #111;
+  line-height: 1.2;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .articulos {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  .articulos h2 {
+    font-size: 22px;
+  }
+
+  .articulos p {
+    font-size: 16px;
+  }
+
+  #articulo1.temas {
+    font-size: 30px;
+  }
+}
+
+/* Artículos recientes */
+.artRecientes {
+  list-style: none;
+  margin: 40px auto;
+  padding: 0;
+  width: 90%;
+  max-width: 800px;
+}
+
+.artRecientes li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.artRecientes li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.artRecientes li a:hover {
+  color: #0077cc;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  height: 80px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 16px;
+}
+
+/* Secciones internas */
+.temas, .recientes h2 {
+  background: none;
+  height: auto;
+  text-align: center;
+  font-size: 26px;
+  color: #111;
+  margin: 40px auto 20px;
+}
+
+.temas1 {
+  font-size: 20px;
+  text-align: center;
+  color: #444;
+  margin: 10px auto;
+}
+
+
+#articulo1.temas {
+  position: relative;
+  /* display: inline-block; */
+  padding-bottom: 10px;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin: 60px auto 30px;
+  color: #111;
+  background-color: #faf9f9;
+  padding: 2%;
+}
+
+#articulo1.temas::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 4px;
+  width: 60px;
+  background-color: #111;
+  border-radius: 2px;
+}
